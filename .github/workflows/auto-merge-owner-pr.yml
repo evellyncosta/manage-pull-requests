@@ -34,8 +34,10 @@ jobs:
     
     - uses: hmarr/auto-approve-action@v2.0.0
       with:
+        set-safe-directory: '*'
         github-token: ${{ secrets.GITHUB_TOKEN }}
     
     - uses: managedkaos/merge-pull-request@v1.2
       env:
+        set-safe-directory: '*'
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
