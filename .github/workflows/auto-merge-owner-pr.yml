@@ -38,7 +38,7 @@ jobs:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         run: git config --global --add safe.directory /github/workspace
     
-    - uses: managedkaos/merge-pull-request@v1.2
+    - uses: managedkaos/merge-pull-request@v2.2.0
       env:
         set-safe-directory: '*'
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
