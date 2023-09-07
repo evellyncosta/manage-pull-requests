@@ -42,4 +42,5 @@ jobs:
       env:
         set-safe-directory: '*'
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: git config --global --add safe.directory /github/workspace
+        run: git config --global --add safe.directory /github/workspace |
+          git config --system --add safe.directory '*' 
